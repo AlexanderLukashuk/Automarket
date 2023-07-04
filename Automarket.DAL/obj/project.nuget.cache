@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "Gl3VjvwA3cmhZlz+sh6HZyha6MxfWA+4v1x4eJez773FtGDPjyqsgyHtkr6g31ySgdgEDCQtDX6gRv4kVqTHjg==",
+  "dgSpecHash": "Hr6ArGK91FrH3E5NK79+r0/Ky5uj7f8ugs8oZzx77BW9YIkwOH+g+7O695mY86eKL776i4Pk3RfG4PN3iMPkBg==",
   "success": true,
   "projectFilePath": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.DAL/Automarket.DAL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore/7.0.8/microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.8/microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.8/microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
