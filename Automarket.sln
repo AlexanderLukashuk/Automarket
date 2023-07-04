@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{31783C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Domain", "Automarket.Domain\Automarket.Domain.csproj", "{21327908-2478-401A-92AB-81D0E13C313C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{C86840B6-41A8-49A7-B377-D643AFD2B366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.DAL", "Automarket.DAL\Automarket.DAL.csproj", "{72FE5B3F-8D75-40B5-9191-91D0D284A6D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{21327908-2478-401A-92AB-81D0E13C313C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21327908-2478-401A-92AB-81D0E13C313C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21327908-2478-401A-92AB-81D0E13C313C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FE5B3F-8D75-40B5-9191-91D0D284A6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FE5B3F-8D75-40B5-9191-91D0D284A6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FE5B3F-8D75-40B5-9191-91D0D284A6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FE5B3F-8D75-40B5-9191-91D0D284A6D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +40,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{21327908-2478-401A-92AB-81D0E13C313C} = {31783CF7-2847-4A93-A93C-7A7EF4169FF2}
+		{72FE5B3F-8D75-40B5-9191-91D0D284A6D3} = {C86840B6-41A8-49A7-B377-D643AFD2B366}
 	EndGlobalSection
 EndGlobal

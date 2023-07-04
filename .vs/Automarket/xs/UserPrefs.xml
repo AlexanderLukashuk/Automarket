@@ -1,5 +1,34 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Automarket.Domain/Entity/Car.cs" Line="22" Column="13" />
+      <File FileName="Automarket.Domain/Enum/TypeCar.cs" Line="16" Column="33" />
+      <File FileName="Automarket/Controllers/HomeController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Automarket">
+            <Node name="Domain">
+              <Node name="Automarket.Domain" expanded="True">
+                <Node name="Entity" expanded="True" />
+                <Node name="Enum" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Automarket" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DAL.Automarket.DAL FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Domain.Automarket.Domain FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Automarket FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
