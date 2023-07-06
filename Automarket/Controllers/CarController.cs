@@ -6,6 +6,7 @@ using Automarket.DAL.Interfaces;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Response;
 using Automarket.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -65,6 +66,18 @@ namespace Automarket.Controllers
             if (response.StatusCode == Domain.Enum.StatusCode.OK)
             {
                 return View(response.Data);
+            }
+
+            return RedirectToAction("Error");
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var response = await _carService.DeleteCar(id);
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            {
+                return RedirectToAction("GetCars");
             }
 
             return RedirectToAction("Error");
