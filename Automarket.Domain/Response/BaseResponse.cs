@@ -1,4 +1,6 @@
 ﻿using System;
+using Automarket.Domain.Enum;
+
 namespace Automarket.Domain.Response
 {
 	public class BaseResponse
