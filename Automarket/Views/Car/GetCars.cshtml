@@ -1,0 +1,11 @@
+﻿@model List<Car>
+
+@foreach (var car in Model)
+{
+    <p>@car.Name</p>
+    <p>@car.Model</p>
+    <p>@car.Desctiption</p>
+    <p>@car.DateCreate</p>
+    <p>@car.Speed</p>
+    <p>@car.Price</p>
+}

@@ -18,6 +18,7 @@ namespace Automarket.Controllers
             _carRepository = carRepository;
         }
 
+        [HttpGet]
         public async Task<IActionResult> GetCars()
         {
             var response = await _carRepository.Select();

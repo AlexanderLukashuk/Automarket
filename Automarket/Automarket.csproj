@@ -23,4 +23,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Car\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Car\" />
+  </ItemGroup>
 </Project>
