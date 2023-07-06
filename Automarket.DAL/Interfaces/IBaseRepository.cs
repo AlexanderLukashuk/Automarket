@@ -5,13 +5,13 @@ namespace Automarket.DAL.Interfaces
 {
 	public interface IBaseRepository<T>
 	{
-		bool Create(T entity);
+		Task<bool> Create(T entity);
 
-		T Get(int id);
+		Task<T> Get(int id);
 
         Task<List<T>> Select();
 
-		bool Delete(T entity);
+		Task<bool> Delete(T entity);
 	}
 }
 
