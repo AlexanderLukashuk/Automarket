@@ -1,30 +1,29 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.Service/Implementations/CarService.cs">
     <Files>
-      <File FileName="Automarket.Domain/Entity/Car.cs" />
+      <File FileName="Automarket.Domain/Entity/Car.cs" Line="22" Column="39" />
       <File FileName="Automarket.Domain/Enum/TypeCar.cs" />
       <File FileName="Automarket/Controllers/HomeController.cs" />
       <File FileName="Automarket/Views/Home/Index.cshtml" />
       <File FileName="Automarket/Views/_ViewImports.cshtml" />
       <File FileName="Automarket.DAL/ApplicationDbContext.cs" />
       <File FileName="Automarket/appsettings.json" />
-      <File FileName="Automarket/Program.cs" Line="16" Column="55" />
-      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" Line="14" Column="13" />
+      <File FileName="Automarket/Program.cs" />
+      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" />
       <File FileName="Automarket.DAL/Interfaces/ICarRepository.cs" />
-      <File FileName="Automarket.DAL/Repositories/CarRepository.cs" Line="30" Column="25" />
-      <File FileName="Automarket/Controllers/CarController.cs" Line="52" Column="26" />
-      <File FileName="Automarket/Views/Car/GetCars.cshtml" Line="1" Column="24" />
-      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="9" Column="51" />
-      <File FileName="Automarket.Service/Implementations/CarService.cs" Line="34" Column="17" />
-      <File FileName="Automarket.Domain/Response/BaseResponse.cs" Line="12" Column="31" />
-      <File FileName="Automarket.Domain/Enum/StatusCode.cs" Line="7" Column="28" />
+      <File FileName="Automarket.DAL/Repositories/CarRepository.cs" />
+      <File FileName="Automarket/Controllers/CarController.cs" Line="29" Column="10" />
+      <File FileName="Automarket/Views/Car/GetCars.cshtml" />
+      <File FileName="Automarket.Service/Interfaces/ICarService.cs" />
+      <File FileName="Automarket.Service/Implementations/CarService.cs" Line="121" Column="50" />
+      <File FileName="Automarket.Domain/Response/BaseResponse.cs" />
+      <File FileName="Automarket.Domain/Enum/StatusCode.cs" Line="6" Column="6" />
+      <File FileName="Automarket.Domain/ViewModels/Car/CarViewModel.cs" Line="19" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -36,30 +35,27 @@
                 <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
-            <Node name="Domain" expanded="True">
-              <Node name="Automarket.Domain" expanded="True">
+            <Node name="Domain">
+              <Node name="Automarket.Domain">
                 <Node name="Entity" expanded="True" />
                 <Node name="Enum" expanded="True" />
                 <Node name="Response" expanded="True" />
+                <Node name="ViewModels" expanded="True" />
               </Node>
             </Node>
             <Node name="Service">
-              <Node name="Automarket.Service" expanded="True">
-                <Node name="Implementations" expanded="True">
-                  <Node name="CarService.cs" selected="True" />
-                </Node>
+              <Node name="Automarket.Service">
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Automarket">
-              <Node name="Views" expanded="True">
-                <Node name="Car" expanded="True" />
-                <Node name="Home" expanded="True" />
-              </Node>
+            <Node name="Automarket" expanded="True">
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
