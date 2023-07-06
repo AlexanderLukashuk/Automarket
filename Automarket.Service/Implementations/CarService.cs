@@ -3,6 +3,7 @@ using Automarket.DAL.Interfaces;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Enum;
 using Automarket.Domain.Response;
+using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
 
 namespace Automarket.Service.Implementations
@@ -100,9 +101,35 @@ namespace Automarket.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<bool>> CreateCar()
+        public async Task<IBaseResponse<CarViewModel>> CreateCar(CarViewModel carViewModel)
         {
+            var baseResponse = new BaseResponse<CarViewModel>();
 
+            try
+            {
+                var car = new Car()
+                {
+                    Desctiption = carViewModel.Desctiption,
+                    DateCreate = DateTime.Now,
+                    Speed = carViewModel.Speed,
+                    Model = carViewModel.Model,
+                    Price = carViewModel.Price,
+                    Name = carViewModel.Name,
+                    TypeCar = (TypeCar)Convert.ToInt32(carViewModel.TypeCar)
+                };
+
+                await _carRepository.Create(car);
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<CarViewModel>()
+                {
+                    Description = $"[DeleteCar]: {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+
+            return baseResponse;
         }
 
         public async Task<IBaseResponse<IEnumerable<Car>>> GetCars()
