@@ -1,0 +1,17 @@
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.Service.deps.json
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.Service.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.Service.pdb
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.DAL.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.Domain.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.Domain.pdb
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/bin/Debug/net7.0/Automarket.DAL.pdb
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.csproj.AssemblyReference.cache
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.AssemblyInfoInputs.cache
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.AssemblyInfo.cs
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.csproj.CoreCompileInputs.cache
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.csproj.CopyComplete
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/refint/Automarket.Service.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/Automarket.Service.pdb
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/obj/Debug/net7.0/ref/Automarket.Service.dll
