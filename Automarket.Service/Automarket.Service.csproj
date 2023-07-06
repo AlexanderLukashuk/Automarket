@@ -14,4 +14,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Implementations\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automarket.Domain\Automarket.Domain.csproj" />
+  </ItemGroup>
 </Project>

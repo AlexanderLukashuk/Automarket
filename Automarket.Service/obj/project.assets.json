@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Automarket.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Automarket.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Automarket.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Automarket.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Automarket.Domain/Automarket.Domain.csproj",
+      "msbuildProject": "../Automarket.Domain/Automarket.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Automarket.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/aleksandrlukasuk/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Domain/Automarket.Domain.csproj": {
+              "projectPath": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Domain/Automarket.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
