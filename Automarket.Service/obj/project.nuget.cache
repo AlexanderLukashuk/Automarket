@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "SYBgV8uSeS0w2n9u5fiwvU6AuwRLD3t2/AabTDsBit5SszU+mEbUT7CZU867QE/6377VaLDOG6zid7UbxEC+mA==",
+  "dgSpecHash": "+TM1R52qu/xP8E1VXaO5VV/KoKOBiOfBgNe3EYmT2xUAdReTVu52fscKw7qR2hm10WIJYuA2qTF5zLkfOP5g9g==",
   "success": true,
   "projectFilePath": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/Automarket.Service.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore/7.0.8/microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.8/microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.8/microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

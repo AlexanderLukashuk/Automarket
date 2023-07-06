@@ -6,7 +6,7 @@ namespace Automarket.Service.Interfaces
 {
 	public interface ICarService
 	{
-		Task<BaseResponse<IEnumerable<Car>>> GetCars();
+		Task<IBaseResponse<IEnumerable<Car>>> GetCars();
 	}
 }
 
