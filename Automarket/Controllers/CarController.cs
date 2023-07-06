@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Automarket.DAL.Interfaces;
 using Automarket.Domain.Entity;
+using Automarket.Domain.Response;
 using Automarket.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -48,6 +49,11 @@ namespace Automarket.Controllers
             //await _carRepository.Delete(car);
 
             var response = await _carService.GetCars();
+            //if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            //{
+            //    return View(response.Data);
+            //}
+            //return RedirectToAction("Error");
 
             return View(response.Data);
         }
