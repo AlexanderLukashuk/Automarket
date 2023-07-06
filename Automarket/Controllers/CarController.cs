@@ -49,7 +49,7 @@ namespace Automarket.Controllers
 
             var response = await _carService.GetCars();
 
-            return View(response);
+            return View(response.Data);
         }
     }
 }
