@@ -100,6 +100,11 @@ namespace Automarket.Service.Implementations
             }
         }
 
+        public async Task<IBaseResponse<bool>> CreateCar()
+        {
+
+        }
+
         public async Task<IBaseResponse<IEnumerable<Car>>> GetCars()
         {
             var baseResponse = new BaseResponse<IEnumerable<Car>>();

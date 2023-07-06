@@ -10,10 +10,14 @@
     <None Remove="Entity\" />
     <None Remove="Enum\" />
     <None Remove="Response\" />
+    <None Remove="ViewModels\" />
+    <None Remove="ViewModels\Car\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
     <Folder Include="Enum\" />
     <Folder Include="Response\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Car\" />
   </ItemGroup>
 </Project>
