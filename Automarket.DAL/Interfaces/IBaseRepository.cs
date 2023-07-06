@@ -1,4 +1,6 @@
 ﻿using System;
+using Automarket.Domain.Entity;
+
 namespace Automarket.DAL.Interfaces
 {
 	public interface IBaseRepository<T>
@@ -7,7 +9,7 @@ namespace Automarket.DAL.Interfaces
 
 		T Get(int id);
 
-		IEnumerable<T> Select();
+        Task<List<T>> Select();
 
 		bool Delete(T entity);
 	}
