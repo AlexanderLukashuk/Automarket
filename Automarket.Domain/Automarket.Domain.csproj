@@ -9,9 +9,11 @@
   <ItemGroup>
     <None Remove="Entity\" />
     <None Remove="Enum\" />
+    <None Remove="Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
     <Folder Include="Enum\" />
+    <Folder Include="Response\" />
   </ItemGroup>
 </Project>
