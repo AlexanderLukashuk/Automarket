@@ -12,4 +12,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Automarket.Domain\Automarket.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Repositories\" />
+    <None Remove="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
 </Project>
