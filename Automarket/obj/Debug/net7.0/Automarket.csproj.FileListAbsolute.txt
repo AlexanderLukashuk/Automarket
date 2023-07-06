@@ -72,3 +72,8 @@
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Automarket.DAL.dll
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Automarket.DAL.pdb
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Humanizer.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/System.CodeDom.dll
