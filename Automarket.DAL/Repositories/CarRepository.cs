@@ -34,9 +34,9 @@ namespace Automarket.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Car>> Select()
+        public async Task<List<Car>> Select()
         {
-            return _context.Cars.ToListAsync();
+            return await _context.Cars.ToListAsync();
         }
     }
 }
