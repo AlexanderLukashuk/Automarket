@@ -160,6 +160,40 @@ namespace Automarket.Service.Implementations
                 };
             }
         }
+
+        public async Task<IBaseResponse<Car>> Edit(int id, CarViewModel model)
+        {
+            var baseResponse = new BaseResponse<Car>();
+
+            try
+            {
+                var car = await _carRepository.Get(id);
+                if (car == null)
+                {
+                    baseResponse.StatusCode = StatusCode.CarNotFound;
+                    baseResponse.Description = "Car not found";
+                    return baseResponse;
+                }
+
+                car.Desctiption = model.Desctiption;
+                car.Model = model.Model;
+                car.Price = model.Price;
+                car.Speed = model.Speed;
+                car.DateCreate = model.DateCreate;
+                car.Name = model.Name;
+
+
+                // TypeCar
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<Car>()
+                {
+                    Description = $"[Edit]: {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
     }
 }
 

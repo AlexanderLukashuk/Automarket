@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Automarket.DAL.Interfaces;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Response;
+using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -98,6 +99,21 @@ namespace Automarket.Controllers
             }
 
             return RedirectToAction("Error");
+        }
+
+        public async Task<IActionResult> Save(CarViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (model.Id == 0)
+                {
+                    await _carService.CreateCar(model);
+                }
+                else
+                {
+
+                }
+            }
         }
     }
 }

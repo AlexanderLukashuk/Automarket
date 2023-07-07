@@ -16,6 +16,8 @@ namespace Automarket.Service.Interfaces
 		Task<IBaseResponse<bool>> DeleteCar(int id);
 
 		Task<IBaseResponse<Car>> GetCarByName(string name);
+
+		Task<IBaseResponse<Car>> Edit(int id, CarViewModel model);
 	}
 }
 
