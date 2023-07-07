@@ -36,7 +36,8 @@ namespace Automarket.Service.Implementations
                     Desctiption = car.Desctiption,
                     TypeCar = car.TypeCar,
                     Speed = car.Speed,
-                    Model = car.Model
+                    Model = car.Model,
+                    Price = car.Price
                 };
 
                 baseResponse.StatusCode = StatusCode.OK;
