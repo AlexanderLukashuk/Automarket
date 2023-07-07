@@ -17,7 +17,7 @@ namespace Automarket.Service.Interfaces
 
 		Task<IBaseResponse<Car>> GetCarByName(string name);
 
-		Task<IBaseResponse<Car>> Edit(int id, CarViewModel model);
+		Task<IBaseResponse<Car>> Edit(long id, CarViewModel model);
 	}
 }
 

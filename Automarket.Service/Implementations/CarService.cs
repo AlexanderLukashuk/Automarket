@@ -213,7 +213,7 @@ namespace Automarket.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<Car>> Edit(int id, CarViewModel model)
+        public async Task<IBaseResponse<Car>> Edit(long id, CarViewModel model)
         {
             //var baseResponse = new BaseResponse<Car>();
 
