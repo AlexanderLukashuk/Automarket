@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.AspNetCore.Http;
 
 namespace Automarket.Domain.ViewModels.Car
 {
@@ -19,6 +20,8 @@ namespace Automarket.Domain.ViewModels.Car
         public DateTime DateCreate { get; set; }
 
         public string? TypeCar { get; set; }
+
+        public IFormFile? Avatar { get; set; }
     }
 }
 

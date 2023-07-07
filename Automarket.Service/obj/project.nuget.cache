@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+TM1R52qu/xP8E1VXaO5VV/KoKOBiOfBgNe3EYmT2xUAdReTVu52fscKw7qR2hm10WIJYuA2qTF5zLkfOP5g9g==",
+  "dgSpecHash": "dutrhg2OZyMl0K7NyZMiWumfE4xbp+LxOWTGOgECyZH9GeK/jkkaB+ehbGv2xHuZnGbpDHGR98KPC8fqcXwTrQ==",
   "success": true,
   "projectFilePath": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/Automarket.Service.csproj",
   "expectedPackageFiles": [
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore/7.0.8/microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.8/microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.8/microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
@@ -13,8 +17,12 @@
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
-    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
