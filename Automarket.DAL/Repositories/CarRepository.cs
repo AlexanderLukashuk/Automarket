@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.DAL.Repositories
 {
-	public class CarRepository : ICarRepository
+	public class CarRepository : IBaseRepository<Car>
 	{
         private readonly ApplicationDbContext _context;
 
@@ -33,6 +33,11 @@ namespace Automarket.DAL.Repositories
         public async Task<Car> Get(int id)
         {
             return await _context.Cars.FirstOrDefaultAsync(c => c.Id == id);
+        }
+
+        public IQueryable<Car> GetAll()
+        {
+            return _context.Cars;
         }
 
         public async Task<Car> GetByName(string name)
