@@ -1,4 +1,5 @@
-﻿using Automarket.DAL;
+﻿using Automarket;
+using Automarket.DAL;
 using Automarket.DAL.Interfaces;
 using Automarket.DAL.Repositories;
 using Automarket.Domain.Entity;
@@ -13,8 +14,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(connectionString, optionsBuilder => optionsBuilder.MigrationsAssembly("Automarket")));
 
-builder.Services.AddScoped<IBaseRepository<Car>, CarRepository>();
-builder.Services.AddScoped<ICarService, CarService>();
+//builder.Services.AddScoped<IBaseRepository<Car>, CarRepository>();
+//builder.Services.AddScoped<ICarService, CarService>();
+
+builder.Services.InitializeRepositories();
+builder.Services.InitializeServices();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
