@@ -31,5 +31,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Car\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
   </ItemGroup>
 </Project>
