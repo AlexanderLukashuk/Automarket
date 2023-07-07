@@ -15,9 +15,9 @@ namespace Automarket.Service.Interfaces
 
 		Task<IBaseResponse<bool>> DeleteCar(int id);
 
-		Task<IBaseResponse<Car>> GetCarByName(string name);
+		Task<BaseResponse<Dictionary<long, string>>> GetCar(string name);
 
-		Task<IBaseResponse<Car>> Edit(long id, CarViewModel model);
+        Task<IBaseResponse<Car>> Edit(long id, CarViewModel model);
 	}
 }
 
