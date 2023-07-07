@@ -31,7 +31,7 @@ namespace Automarket.Domain.ViewModels.Car
         [Required(ErrorMessage = "Specify the price")]
         public decimal Price { get; set; }
 
-        public DateTime DateCreate { get; set; }
+        public string? DateCreate { get; set; }
 
         [Display(Name = "Type of car")]
         [Required(ErrorMessage = "Select the type")]
