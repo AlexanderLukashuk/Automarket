@@ -18,4 +18,7 @@
     <ProjectReference Include="..\Automarket.Domain\Automarket.Domain.csproj" />
     <ProjectReference Include="..\Automarket.DAL\Automarket.DAL.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Enable.EnumDisplayName" Version="2.0.18" />
+  </ItemGroup>
 </Project>

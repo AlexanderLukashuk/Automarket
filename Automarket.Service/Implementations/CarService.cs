@@ -5,13 +5,14 @@ using Automarket.Domain.Enum;
 using Automarket.Domain.Response;
 using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
+using Enable.EnumDisplayName;
 using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.Service.Implementations
 {
     public class CarService : ICarService
     {
-        private readonly ICarRepository _carRepository;
+        private readonly IBaseRepository<Car> _carRepository;
 
         public CarService(ICarRepository carRepository)
         {
@@ -56,25 +57,44 @@ namespace Automarket.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<Car>> GetCarByName(string name)
+        public async Task<BaseResponse<Dictionary<long, string>>> GetCar(string name)
         {
-            var baseResponse = new BaseResponse<Car>();
+            //var baseResponse = new BaseResponse<Car>();
+
+            var baseResponse = new BaseResponse<Dictionary<long, string>>();
             try
             {
-                var car = await _carRepository.GetByName(name);
-                if (car == null)
-                {
-                    baseResponse.Description = "Car not found";
-                    baseResponse.StatusCode = StatusCode.CarNotFound;
-                    return baseResponse;
-                }
+                var cars = await _carRepository.GetAll()
+                    .Select(c => new CarViewModel()
+                    {
+                        Id = c.Id,
+                        Speed = c.Speed,
+                        Name = c.Name,
+                        Desctiption = c.Desctiption,
+                        Model = c.Model,
+                        DateCreate = c.DateCreate.ToLongDateString(),
+                        Price = c.Price,
+                        TypeCar = c.TypeCar.GetDisplayName()
+                    })
+                    .Where(x => EF.Functions.Like(x.Name, $"%{name}%"))
+                    .ToDictionaryAsync(x => x.Id, t => t.Name);
 
-                baseResponse.Data = car;
+                baseResponse.Data = cars;
                 return baseResponse;
+
+                //if (car == null)
+                //{
+                //    baseResponse.Description = "Car not found";
+                //    baseResponse.StatusCode = StatusCode.CarNotFound;
+                //    return baseResponse;
+                //}
+
+                //baseResponse.Data = car;
+                //return baseResponse;
             }
             catch (Exception ex)
             {
-                return new BaseResponse<Car>()
+                return new BaseResponse<Dictionary<long, string>>()
                 {
                     Description = $"[GetCarByName]: {ex.Message}",
                     StatusCode = StatusCode.InternalServerError
