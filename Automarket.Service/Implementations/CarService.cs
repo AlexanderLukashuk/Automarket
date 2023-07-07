@@ -128,35 +128,40 @@ namespace Automarket.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<CarViewModel>> CreateCar(CarViewModel carViewModel)
+        public async Task<IBaseResponse<Car>> CreateCar(CarViewModel carViewModel, byte[] imageData)
         {
-            var baseResponse = new BaseResponse<CarViewModel>();
+            //var baseResponse = new BaseResponse<CarViewModel>();
 
             try
             {
                 var car = new Car()
                 {
+                    Name = carViewModel.Name,
+                    Model = carViewModel.Model,
                     Desctiption = carViewModel.Desctiption,
                     DateCreate = DateTime.Now,
                     Speed = carViewModel.Speed,
-                    Model = carViewModel.Model,
                     Price = carViewModel.Price,
-                    Name = carViewModel.Name,
-                    TypeCar = (TypeCar)Convert.ToInt32(carViewModel.TypeCar)
+                    TypeCar = (TypeCar)Convert.ToInt32(carViewModel.TypeCar),
+                    Avatar = imageData
                 };
 
                 await _carRepository.Create(car);
+
+                return new BaseResponse<Car>()
+                {
+                    StatusCode = StatusCode.OK,
+                    Data = car
+                };
             }
             catch (Exception ex)
             {
-                return new BaseResponse<CarViewModel>()
+                return new BaseResponse<Car>()
                 {
                     Description = $"[DeleteCar]: {ex.Message}",
                     StatusCode = StatusCode.InternalServerError
                 };
             }
-
-            return baseResponse;
         }
 
         public async Task<IBaseResponse<List<Car>>> GetCars()
