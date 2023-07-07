@@ -182,6 +182,9 @@ namespace Automarket.Service.Implementations
                 car.DateCreate = model.DateCreate;
                 car.Name = model.Name;
 
+                await _carRepository.Update(car);
+
+                return baseResponse;
 
                 // TypeCar
             }
