@@ -33,6 +33,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/img/Bmw.jpg",
+      "PackagePath": "staticwebassets/img/Bmw.jpg"
+    },
+    {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/img/Bmw_I8.jpg",
+      "PackagePath": "staticwebassets/img/Bmw_I8.jpg"
+    },
+    {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/img/Mustang.jpg",
+      "PackagePath": "staticwebassets/img/Mustang.jpg"
+    },
+    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
