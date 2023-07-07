@@ -5,6 +5,7 @@ using Automarket.Domain.Enum;
 using Automarket.Domain.Response;
 using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.Service.Implementations
 {
@@ -22,7 +23,8 @@ namespace Automarket.Service.Implementations
             var baseResponse = new BaseResponse<Car>();
             try
             {
-                var car = await _carRepository.Get(id);
+                //var car = await _carRepository.Get(id);
+                var car = await _carRepository.GetAll().FirstOrDefaultAsync(c => c.Id == id);
                 if (car == null)
                 {
                     baseResponse.Description = "Car not found";
@@ -82,25 +84,39 @@ namespace Automarket.Service.Implementations
 
         public async Task<IBaseResponse<bool>> DeleteCar(int id)
         {
-            var baseResponse = new BaseResponse<bool>()
-            {
-                Data = true
-            };
+            //var baseResponse = new BaseResponse<bool>()
+            //{
+            //    Data = true
+            //};
 
             try
             {
-                var car = await _carRepository.Get(id);
+                //var car = await _carRepository.Get(id);
+                var car = await _carRepository.GetAll().FirstOrDefaultAsync(c => c.Id == id);
                 if (car == null)
                 {
-                    baseResponse.Description = "Car not found";
-                    baseResponse.StatusCode = StatusCode.CarNotFound;
-                    baseResponse.Data = false;
-                    return baseResponse;
+                    //baseResponse.Description = "Car not found";
+                    //baseResponse.StatusCode = StatusCode.CarNotFound;
+                    //baseResponse.Data = false;
+                    //return baseResponse;
+
+                    return new BaseResponse<bool>()
+                    {
+                        Description = "Car not found",
+                        StatusCode = StatusCode.CarNotFound,
+                        Data = false
+                    };
                 }
 
                 await _carRepository.Delete(car);
 
-                return baseResponse;
+                //return baseResponse;
+
+                return new BaseResponse<bool>()
+                {
+                    Data = true,
+                    StatusCode = StatusCode.OK
+                };
             }
             catch (Exception ex)
             {
@@ -143,30 +159,50 @@ namespace Automarket.Service.Implementations
             return baseResponse;
         }
 
-        public async Task<IBaseResponse<IEnumerable<Car>>> GetCars()
+        public async Task<IBaseResponse<List<Car>>> GetCars()
         {
-            var baseResponse = new BaseResponse<IEnumerable<Car>>();
+            //var baseResponse = new BaseResponse<IEnumerable<Car>>();
 
             try
             {
-                var cars = await _carRepository.Select();
-                if (cars.Count == 0)
+                //var cars = await _carRepository.Select();
+                var cars = await _carRepository.GetAll().ToListAsync();
+                //if (cars.Count == 0)
+                if (!cars.Any())
                 {
-                    baseResponse.Description = "0 elements found";
-                    baseResponse.StatusCode = StatusCode.OK;
-                    return baseResponse;
+                    //baseResponse.Description = "0 elements found";
+                    //baseResponse.StatusCode = StatusCode.OK;
+                    //return baseResponse;
+
+                    return new BaseResponse<List<Car>>()
+                    {
+                        Description = "0 elements found",
+                        StatusCode = StatusCode.OK
+                    };
                 }
 
-                baseResponse.Data = cars;
-                baseResponse.StatusCode = StatusCode.OK;
+                //baseResponse.Data = cars;
+                //baseResponse.StatusCode = StatusCode.OK;
 
-                return baseResponse;
+                //return baseResponse;
+
+                return new BaseResponse<List<Car>>()
+                {
+                    Data = cars,
+                    StatusCode = StatusCode.OK
+                };
             }
             catch (Exception ex)
             {
-                return new BaseResponse<IEnumerable<Car>>()
+                //return new BaseResponse<IEnumerable<Car>>()
+                //{
+                //    Description = $"[GetCars]: {ex.Message}",
+                //    StatusCode = StatusCode.InternalServerError
+                //};
+
+                return new BaseResponse<List<Car>>()
                 {
-                    Description = $"[GetCars]: {ex.Message}",
+                    Description = $"[GetCars] : {ex.Message}",
                     StatusCode = StatusCode.InternalServerError
                 };
             }
@@ -174,16 +210,23 @@ namespace Automarket.Service.Implementations
 
         public async Task<IBaseResponse<Car>> Edit(int id, CarViewModel model)
         {
-            var baseResponse = new BaseResponse<Car>();
+            //var baseResponse = new BaseResponse<Car>();
 
             try
             {
-                var car = await _carRepository.Get(id);
+                //var car = await _carRepository.Get(id);
+                var car = await _carRepository.GetAll().FirstOrDefaultAsync(c => c.Id == id);
                 if (car == null)
                 {
-                    baseResponse.StatusCode = StatusCode.CarNotFound;
-                    baseResponse.Description = "Car not found";
-                    return baseResponse;
+                    //baseResponse.StatusCode = StatusCode.CarNotFound;
+                    //baseResponse.Description = "Car not found";
+                    //return baseResponse;
+
+                    return new BaseResponse<Car>()
+                    {
+                        Description = "Car not found",
+                        StatusCode = StatusCode.CarNotFound
+                    };
                 }
 
                 car.Desctiption = model.Desctiption;
@@ -195,7 +238,13 @@ namespace Automarket.Service.Implementations
 
                 await _carRepository.Update(car);
 
-                return baseResponse;
+                //return baseResponse;
+
+                return new BaseResponse<Car>()
+                {
+                    Data = car,
+                    StatusCode = StatusCode.OK,
+                };
 
                 // TypeCar
             }
