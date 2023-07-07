@@ -1,6 +1,5 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/Controllers/CarController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/Views/Shared/_Layout.cshtml">
     <Files>
       <File FileName="Automarket.Domain/Entity/Car.cs" />
       <File FileName="Automarket.Domain/Enum/TypeCar.cs" />
@@ -10,24 +9,30 @@
       <File FileName="Automarket.DAL/ApplicationDbContext.cs" />
       <File FileName="Automarket/appsettings.json" />
       <File FileName="Automarket/Program.cs" />
-      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" />
+      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" Line="16" Column="28" />
       <File FileName="Automarket.DAL/Interfaces/ICarRepository.cs" />
-      <File FileName="Automarket.DAL/Repositories/CarRepository.cs" />
-      <File FileName="Automarket/Controllers/CarController.cs" Line="114" Column="1" />
+      <File FileName="Automarket.DAL/Repositories/CarRepository.cs" Line="53" Column="27" />
+      <File FileName="Automarket/Controllers/CarController.cs" Line="120" Column="48" />
       <File FileName="Automarket/Views/Car/GetCars.cshtml" />
-      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="18" Column="54" />
-      <File FileName="Automarket.Service/Implementations/CarService.cs" Line="121" Column="50" />
-      <File FileName="Automarket.Domain/Response/BaseResponse.cs" Line="19" Column="65" />
-      <File FileName="Automarket.Domain/Enum/StatusCode.cs" Line="6" Column="6" />
-      <File FileName="Automarket.Domain/ViewModels/Car/CarViewModel.cs" Line="7" Column="36" />
-      <File FileName="Automarket/Views/Car/GetCar.cshtml" Line="3" Column="27" />
+      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="20" Column="61" />
+      <File FileName="Automarket.Service/Implementations/CarService.cs" Line="187" Column="37" />
+      <File FileName="Automarket.Domain/Response/BaseResponse.cs" />
+      <File FileName="Automarket.Domain/Enum/StatusCode.cs" />
+      <File FileName="Automarket.Domain/ViewModels/Car/CarViewModel.cs" />
+      <File FileName="Automarket/Views/Car/GetCar.cshtml" />
+      <File FileName="Automarket/Views/Shared/_Layout.cshtml" Line="110" Column="156" />
+      <File FileName="Automarket/wwwroot/css/card.css" Line="1" Column="1" />
+      <File FileName="Automarket/wwwroot/css/label.css" Line="1" Column="1" />
+      <File FileName="Automarket/wwwroot/css/menu.css" Line="1" Column="1" />
+      <File FileName="Automarket/wwwroot/css/paragraph.css" Line="1" Column="1" />
+      <File FileName="Automarket/wwwroot/css/site.css" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Automarket">
-            <Node name="DAL">
-              <Node name="Automarket.DAL">
+            <Node name="DAL" expanded="True">
+              <Node name="Automarket.DAL" expanded="True">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
@@ -36,6 +41,10 @@
               <Node name="Automarket.Domain">
                 <Node name="Entity" expanded="True" />
                 <Node name="Enum" expanded="True" />
+                <Node name="Response" expanded="True" />
+                <Node name="ViewModels" expanded="True">
+                  <Node name="Car" expanded="True" />
+                </Node>
               </Node>
             </Node>
             <Node name="Service" expanded="True">
@@ -44,12 +53,14 @@
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Automarket">
-              <Node name="Controllers">
-                <Node name="CarController.cs" selected="True" />
-              </Node>
+            <Node name="Automarket" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Car" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -57,10 +68,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
