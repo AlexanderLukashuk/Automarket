@@ -85,6 +85,7 @@ namespace Automarket.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Save(int id)
         {
             if (id == 0)
@@ -101,6 +102,7 @@ namespace Automarket.Controllers
             return RedirectToAction("Error");
         }
 
+        [HttpPost]
         public async Task<IActionResult> Save(CarViewModel model)
         {
             if (ModelState.IsValid)
@@ -111,9 +113,11 @@ namespace Automarket.Controllers
                 }
                 else
                 {
-                    await _carService.Edit();
+                    await _carService.Edit(model.Id, model);
                 }
             }
+
+            return RedirectToAction("GetCars");
         }
     }
 }
