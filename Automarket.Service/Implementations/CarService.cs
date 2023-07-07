@@ -14,7 +14,7 @@ namespace Automarket.Service.Implementations
     {
         private readonly IBaseRepository<Car> _carRepository;
 
-        public CarService(ICarRepository carRepository)
+        public CarService(IBaseRepository<Car> carRepository)
         {
             _carRepository = carRepository;
         }
