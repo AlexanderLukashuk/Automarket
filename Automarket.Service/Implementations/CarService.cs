@@ -258,7 +258,7 @@ namespace Automarket.Service.Implementations
                 car.Model = model.Model;
                 car.Price = model.Price;
                 car.Speed = model.Speed;
-                car.DateCreate = model.DateCreate;
+                car.DateCreate = DateTime.ParseExact(model.DateCreate, "yyyyMMdd HH:mm", null);
                 car.Name = model.Name;
 
                 await _carRepository.Update(car);
