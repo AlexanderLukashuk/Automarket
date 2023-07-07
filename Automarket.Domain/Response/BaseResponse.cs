@@ -14,9 +14,11 @@ namespace Automarket.Domain.Response
 
 	public interface IBaseResponse<T>
 	{
-		T? Data { get; set; }
+		T? Data { get; }
 
-        public StatusCode StatusCode { get; set; } // Error code
+        public StatusCode StatusCode { get; } // Error code
+
+        public string? Description { get; }
     }
 }
 
