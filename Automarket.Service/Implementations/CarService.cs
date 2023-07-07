@@ -30,7 +30,17 @@ namespace Automarket.Service.Implementations
                     return baseResponse;
                 }
 
-                baseResponse.Data = car;
+                var data = new Car()
+                {
+                    DateCreate = car.DateCreate,
+                    Desctiption = car.Desctiption,
+                    TypeCar = car.TypeCar,
+                    Speed = car.Speed,
+                    Model = car.Model
+                };
+
+                baseResponse.StatusCode = StatusCode.OK;
+                baseResponse.Data = data;
                 return baseResponse;
             }
             catch (Exception ex)
