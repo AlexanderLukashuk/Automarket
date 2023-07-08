@@ -11,7 +11,8 @@ namespace Automarket.DAL
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 			: base(options)
 		{
-			Database.EnsureCreated();
+            Database.EnsureDeleted();
+            Database.EnsureCreated();
 		}
 
 		public DbSet<Car> Cars { get; set; }
