@@ -35,11 +35,13 @@
     <Folder Include="wwwroot\lib\select2\" />
     <Folder Include="wwwroot\lib\select2\css\" />
     <Folder Include="wwwroot\lib\select2\js\" />
+    <Folder Include="wwwroot\lib\select2\js\i18n\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />
     <Content Remove="wwwroot\lib\select2\" />
     <Content Remove="wwwroot\lib\select2\css\" />
     <Content Remove="wwwroot\lib\select2\js\" />
+    <Content Remove="wwwroot\lib\select2\js\i18n\" />
   </ItemGroup>
 </Project>
