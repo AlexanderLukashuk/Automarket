@@ -32,8 +32,14 @@
   <ItemGroup>
     <Folder Include="Views\Car\" />
     <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\lib\select2\" />
+    <Folder Include="wwwroot\lib\select2\css\" />
+    <Folder Include="wwwroot\lib\select2\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />
+    <Content Remove="wwwroot\lib\select2\" />
+    <Content Remove="wwwroot\lib\select2\css\" />
+    <Content Remove="wwwroot\lib\select2\js\" />
   </ItemGroup>
 </Project>
