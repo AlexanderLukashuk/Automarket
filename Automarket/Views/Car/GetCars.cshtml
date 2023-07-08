@@ -5,6 +5,22 @@
     Layout = "_Layout";
 }
 
+@{
+    var cardStyle = "col-md-12";
+    if (Model != null)
+    {
+        switch (Model.Count)
+        {
+            case 2:
+                cardStyle = "col-md-6";
+                break;
+            case 3:
+                cardStyle = "col-md-4";
+                break;
+        }
+    }
+}
+
 <style>
     .card-buttons-group {
         text-align: right;
@@ -12,9 +28,14 @@
     }
 </style>
 
-<div class="card-buttons-group">
-    <button class="btn btn-danger" id='hideCardsId'>Hide</button>
-    <button class='btn btn-success' id='showCardsId'>Show</button>
+<div class="card col-md-12" style="margin: 10px;">
+    <div class="card-buttons-group">
+        <button class='btn btn-primary' id='compareBtnId'>Comparison</button>
+        @if (User.IsInRole("Admin"))
+        {
+            <button class='btn btn-success' id='addCarId'>Add</button>
+        }
+    </div>
 </div>
 
 <div style="padding: 10px;"></div>
@@ -72,11 +93,15 @@ else
                             <p class="card-text">@car.Desctiption</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Стоимость: @car.Price $</li>
+                            <li class="list-group-item">Price: @car.Price $</li>
                             <li class="list-group-item">@car.TypeCar</li>
                         </ul>
                         <div class="card-body">
-                            <a asp-controller="Car" asp-action="GetCar" asp-route-id="@car.Id" class="card-link">Go</a>
+                            <button class="btn btn-primary" onclick="openModal({ url: '/Car/GetCar', data: '@car.Id' })"
+                                    data-toggle="ajax-modal" data-target="Modal">
+                                Open
+                            </button>
+                            @*<a asp-controller="Car" asp-action="GetCar" asp-route-id="@car.Id" class="card-link">Go</a>*@
                             @* <a asp-controller="Basket" asp-action="Add" asp-route-id="@id" class="card-link">Добавить</a> *@
                             @if (User.IsInRole("Admin"))
                             {
@@ -84,6 +109,7 @@ else
                                 <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">Delete</a>
                                 <a asp-controller="Car" asp-action="Save" asp-route-id="@car.Id" class="btn btn-primary">Edit</a>
                             }
+                            <a asp-controller="Order" asp-action="CreateOrder" asp-route-id="@car.Id" class="btn btn-success">В корзину</a>
                         </div>
                     </div>
                 </div>
@@ -92,22 +118,84 @@ else
     </div>
 }
 
+<div class="modal fade" id="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Information about the car</h5>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-close btn-secondary" data-bs-dismiss="modal">Close</button>
+                @if (User.IsInRole("Admin"))
+                    {
+                        <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
+                    }
+            </div>
+        </div>
+    </div>
+</div>
+
+@*@section pageScripts {
+        <script>const hideCardElement = $('#hideCardsId');
+            const showCardElement = $('#showCardsId');
+            const cardElement = $('.card');
+
+            const interval = 2000;
+
+            hideCardElement.click(function () {
+                hideCardElement.hide(interval);
+                showCardElement.show(interval);
+                cardElement.hide(interval);
+            });
+
+            showCardElement.click(function () {
+                hideCardElement.show(interval);
+                showCardElement.hide(interval);
+                cardElement.show(interval);
+            });</script>
+    }*@
+
 @section pageScripts {
-    <script>const hideCardElement = $('#hideCardsId');
-        const showCardElement = $('#showCardsId');
-        const cardElement = $('.card');
 
-        const interval = 2000;
+    <script src="~/js/modal.js"></script>
+    <script>
+       let modal = $('#modalWhButtons');
 
-        hideCardElement.click(function(){
-            hideCardElement.hide(interval);
-            showCardElement.show(interval);
-            cardElement.hide(interval);
-        });
+       $('#compareBtnId').on('click', function (){
+           $.ajax({
+               type: 'GET',
+               url : '@Url.Action("Compare")',
+               success: function (response) {
+                   $('.modal-dialog').addClass("modal-lg");
+                   modal.find(".modal-body").html(response);
+                   modal.modal('show')
+               }
+           });
+       });
 
-        showCardElement.click(function () {
-            hideCardElement.show(interval);
-            showCardElement.hide(interval);
-            cardElement.show(interval);
-        });</script>
+       $(".btn-close").click(function(){
+            modal.modal('hide');
+       });
+
+       $('#addCarId').on('click', function () {
+           $.ajax({
+              type: 'GET',
+              url : '/Car/Save',
+              success: function (response) {
+                  $('.modal-dialog').removeClass("modal-lg");
+                  modal.find(".modal-body").html(response);
+                  modal.modal('show')
+              },
+              failure: function () {
+                modal.modal('hide')
+              },
+              error: function (response) {
+                  alert(response.responseText);
+              }
+          });
+       });
+
+    </script>
 }
