@@ -79,5 +79,4 @@
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/System.CodeDom.dll
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Automarket.Service.dll
 /Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Automarket.Service.pdb
-/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Enable.Common.Argument.dll
-/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/Enable.EnumDisplayName.dll
+/Users/aleksandrlukasuk/Projects/Automarket/Automarket/bin/Debug/net7.0/nlog.config
