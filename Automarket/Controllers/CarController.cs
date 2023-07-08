@@ -57,7 +57,7 @@ namespace Automarket.Controllers
             //}
             //return RedirectToAction("Error");
 
-            return View(response.Data.ToList());
+            return View(response.Data);
         }
 
         //[HttpGet]
