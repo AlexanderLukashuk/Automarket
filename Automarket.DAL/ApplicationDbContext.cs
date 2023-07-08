@@ -1,5 +1,7 @@
 ﻿using System;
 using Automarket.Domain.Entity;
+using Automarket.Domain.Enum;
+using Automarket.Domain.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.DAL
@@ -24,7 +26,7 @@ namespace Automarket.DAL
 				{
 					Id = 1,
 					Name = "Sanya",
-					Password = "",
+					Password = HashPasswordHelper.HashPassword("123456"),
 					Role = Role.Admin
 				});
 
