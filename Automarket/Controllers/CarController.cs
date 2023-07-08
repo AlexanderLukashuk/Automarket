@@ -60,16 +60,41 @@ namespace Automarket.Controllers
             return View(response.Data.ToList());
         }
 
+        //[HttpGet]
+        //public async Task<IActionResult> GetCar(int id)
+        //{
+        //    var response = await _carService.GetCar(id);
+        //    if (response.StatusCode == Domain.Enum.StatusCode.OK)
+        //    {
+        //        return View(response.Data);
+        //    }
+
+        //    return RedirectToAction("Error");
+        //}
+
         [HttpGet]
-        public async Task<IActionResult> GetCar(int id)
+        public async Task<ActionResult> GetCar(int id, bool isJson)
         {
             var response = await _carService.GetCar(id);
-            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            if (isJson)
             {
-                return View(response.Data);
+                return Json(response.Data);
             }
+            return PartialView("GetCar", response.Data);
+        }
 
-            return RedirectToAction("Error");
+        [HttpPost]
+        public async Task<IActionResult> GetCar(string name)
+        {
+            var response = await _carService.GetCar(name);
+            return Json(response.Data);
+        }
+
+        [HttpPost]
+        public JsonResult GetTypes()
+        {
+            var types = _carService.GetTypes();
+            return Json(types.Data);
         }
 
         [Authorize(Roles = "Admin")]

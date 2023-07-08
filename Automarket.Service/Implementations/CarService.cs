@@ -2,10 +2,10 @@
 using Automarket.DAL.Interfaces;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Enum;
+using Automarket.Domain.Extensions;
 using Automarket.Domain.Response;
 using Automarket.Domain.ViewModels.Car;
 using Automarket.Service.Interfaces;
-using Enable.EnumDisplayName;
 using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.Service.Implementations
