@@ -7,6 +7,8 @@ namespace Automarket.Service.Interfaces
 {
 	public interface ICarService
 	{
+		BaseResponse<Dictionary<int, string>> GetTypes();
+
         Task<IBaseResponse<List<Car>>> GetCars();
 
 		Task<IBaseResponse<Car>> GetCar(int id);
