@@ -13,24 +13,29 @@ namespace Automarket.DAL.Repositories
 			_context = context;
 		}
 
-        public Task Create(User entity)
+        public async Task Create(User entity)
         {
-            throw new NotImplementedException();
+            await _context.Users.AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public Task Delete(User entity)
+        public async Task Delete(User entity)
         {
-            throw new NotImplementedException();
+            _context.Users.Remove(entity);
+            await _context.SaveChangesAsync();
         }
 
         public IQueryable<User> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Users;
         }
 
-        public Task<User> Update(User entity)
+        public async Task<User> Update(User entity)
         {
-            throw new NotImplementedException();
+            _context.Users.Update(entity);
+            await _context.SaveChangesAsync();
+
+            return entity;
         }
     }
 }
