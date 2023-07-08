@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2FE8bGm2+xxULsLk5XnuXYnEqkBZOieXHlUAhRfbS6QIxZDJJyJi1KydEakjS6gN+zsHIYFDPs+iF9xR/yH88A==",
+  "dgSpecHash": "iUK8vY/+JgJfO+4ibyGrRrj5KrHPgfFPNEt6KVkCiKRQ0LAHUV//b9n/8To+kqdjWT8tNQgfKeUMwsQB+NqEsA==",
   "success": true,
   "projectFilePath": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket.Service/Automarket.Service.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,10 @@
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore/7.0.8/microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.8/microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.8/microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.8/microsoft.entityframeworkcore.relational.7.0.8.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleksandrlukasuk/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",

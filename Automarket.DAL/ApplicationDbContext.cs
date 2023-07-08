@@ -13,6 +13,29 @@ namespace Automarket.DAL
 		}
 
 		public DbSet<Car> Cars { get; set; }
+
+		public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+			modelBuilder.Entity<User>(builder =>
+			{
+				builder.HasData(new User
+				{
+					Id = 1,
+					Name = "Sanya",
+					Password = "",
+					Role = Role.Admin
+				});
+
+				builder.ToTable("Users").HasKey(x => x.Id);
+
+				builder.Property(x => x.Id)
+					.ValueGeneratedOnAdd();
+
+				builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
+			});
+        }
     }
 }
 
