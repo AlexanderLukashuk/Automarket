@@ -13,6 +13,7 @@
     <None Remove="ViewModels\" />
     <None Remove="ViewModels\Car\" />
     <None Remove="ViewModels\User\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
@@ -21,6 +22,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Car\" />
     <Folder Include="ViewModels\User\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
