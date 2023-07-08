@@ -35,7 +35,8 @@ namespace Automarket.DAL
 				builder.Property(x => x.Id)
 					.ValueGeneratedOnAdd();
 
-				builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
+                builder.Property(x => x.Password).IsRequired();
+                builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
 			});
         }
     }
