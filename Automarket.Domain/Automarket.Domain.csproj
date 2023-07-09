@@ -15,6 +15,7 @@
     <None Remove="ViewModels\User\" />
     <None Remove="Helpers\" />
     <None Remove="Extensions\" />
+    <None Remove="ViewModels\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
@@ -25,6 +26,7 @@
     <Folder Include="ViewModels\User\" />
     <Folder Include="Helpers\" />
     <Folder Include="Extensions\" />
+    <Folder Include="ViewModels\Account\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
