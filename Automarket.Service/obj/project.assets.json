@@ -878,7 +878,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Automarket.DAL >= 1.0.0",
-      "Automarket.Domain >= 1.0.0"
+      "Automarket.Domain >= 1.0.0",
+      "Microsoft.Extensions.Logging >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -924,6 +925,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

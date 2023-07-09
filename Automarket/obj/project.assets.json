@@ -1254,7 +1254,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Automarket.DAL": "1.0.0",
-          "Automarket.Domain": "1.0.0"
+          "Automarket.Domain": "1.0.0",
+          "Microsoft.Extensions.Logging": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Automarket.Service.dll": {}
