@@ -1,45 +1,53 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/wwwroot/lib/select2/css/select2.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.Service/Implementations/UserService.cs">
     <Files>
       <File FileName="Automarket/Views/Home/Index.cshtml" />
       <File FileName="Automarket/Program.cs" />
-      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="20" Column="48" />
+      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="12" Column="40" />
       <File FileName="Automarket.Service/Implementations/CarService.cs" Line="8" Column="37" />
       <File FileName="Automarket.DAL/Repositories/CarRepository.cs" />
       <File FileName="Automarket.Domain/ViewModels/Car/CarViewModel.cs" />
-      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" Line="1" Column="1" />
+      <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" />
       <File FileName="Automarket/Initializer.cs" />
       <File FileName="Automarket.DAL/Interfaces/ICarRepository.cs" />
-      <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="21" Column="48" />
-      <File FileName="Automarket.Domain/Entity/Car.cs" />
+      <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="43" Column="6" />
+      <File FileName="Automarket.Domain/Entity/Car.cs" Line="6" Column="15" />
       <File FileName="Automarket.Domain/Enum/StatusCode.cs" />
       <File FileName="Automarket.Domain/Enum/TypeCar.cs" />
       <File FileName="Automarket.Domain/Response/BaseResponse.cs" />
-      <File FileName="Automarket.Domain/Entity/User.cs" Line="14" Column="33" />
+      <File FileName="Automarket.Domain/Entity/User.cs" />
       <File FileName="Automarket.Domain/ViewModels/User/UserViewModel.cs" Line="20" Column="31" />
-      <File FileName="Automarket.DAL/Repositories/UserRepository.cs" Line="15" Column="1" />
-      <File FileName="Automarket.Domain/Enum/Role.cs" Line="12" Column="28" />
-      <File FileName="Automarket.Domain/Helpers/HashPasswordHelper.cs" Line="7" Column="40" />
-      <File FileName="Automarket.Domain/Extensions/EnumExtension.cs" Line="7" Column="35" />
-      <File FileName="Automarket/Controllers/CarController.cs" Line="93" Column="19" />
-      <File FileName="Automarket/nlog.config" Line="16" Column="89" />
-      <File FileName="Automarket/Views/Shared/_Layout.cshtml" Line="142" Column="1" />
+      <File FileName="Automarket.DAL/Repositories/UserRepository.cs" Line="38" Column="27" />
+      <File FileName="Automarket.Domain/Enum/Role.cs" />
+      <File FileName="Automarket.Domain/Helpers/HashPasswordHelper.cs" />
+      <File FileName="Automarket.Domain/Extensions/EnumExtension.cs" />
+      <File FileName="Automarket/Controllers/CarController.cs" Line="59" Column="1" />
+      <File FileName="Automarket/nlog.config" />
+      <File FileName="Automarket/Views/Shared/_Layout.cshtml" />
       <File FileName="Automarket/wwwroot/lib/select2/css/select2.css" Line="629" Column="1" />
-      <File FileName="Automarket/wwwroot/lib/select2/css/select2.min" Line="1" Column="14966" />
+      <File FileName="Automarket/Views/Car/GetCars.cshtml" Line="42" Column="20" />
+      <File FileName="Automarket/Views/Car/GetCar.cshtml" Line="56" Column="83" />
+      <File FileName="Automarket/Views/_ViewImports.cshtml" Line="4" Column="40" />
+      <File FileName="Automarket/Migrations/ApplicationDbContextModelSnapshot.cs" Line="24" Column="1" />
+      <File FileName="Automarket/Migrations/20230708212457_UserModel.cs" Line="29" Column="41" />
+      <File FileName="Automarket/Migrations/20230706064335_Initial.cs" Line="31" Column="22" />
+      <File FileName="Automarket.Service/Interfaces/IUserService.cs" Line="8" Column="31" />
+      <File FileName="Automarket.Service/Implementations/UserService.cs" Line="65" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Automarket">
-            <Node name="DAL" expanded="True">
-              <Node name="Automarket.DAL" expanded="True">
+            <Node name="DAL">
+              <Node name="Automarket.DAL">
                 <Node name="Interfaces" expanded="True" />
-                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
             <Node name="Domain" expanded="True">
@@ -56,27 +64,24 @@
               </Node>
             </Node>
             <Node name="Service" expanded="True">
-              <Node name="Automarket.Service" expanded="True">
-                <Node name="Implementations" expanded="True" />
+              <Node name="Automarket.Service">
+                <Node name="Implementations" expanded="True">
+                  <Node name="UserService.cs" selected="True" />
+                </Node>
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Automarket">
+            <Node name="Automarket" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Views">
+              <Node name="Migrations" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Car" expanded="True" />
                 <Node name="Home" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="lib" expanded="True">
                   <Node name="select2" expanded="True">
-                    <Node name="css" expanded="True">
-                      <Node name="select2.css" expanded="True" />
-                    </Node>
-                    <Node name="js">
-                      <Node name="select2.js" expanded="True">
-                        <Node name="select2.full.js" expanded="True" />
-                      </Node>
-                    </Node>
+                    <Node name="css" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -86,6 +91,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
