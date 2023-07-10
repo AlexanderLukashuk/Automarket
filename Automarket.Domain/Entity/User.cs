@@ -12,6 +12,8 @@ namespace Automarket.Domain.Entity
 		public string? Name { get; set; }
 
 		public Role Role { get; set; }
+
+		public Profile? Profile { get; set; }
 	}
 }
 
