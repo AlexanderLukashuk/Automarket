@@ -19,6 +19,8 @@ namespace Automarket.DAL
 
 		public DbSet<User> Users { get; set; }
 
+		public DbSet<Profile> Profiles { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 			modelBuilder.Entity<User>(builder =>
@@ -38,6 +40,22 @@ namespace Automarket.DAL
 
                 builder.Property(x => x.Password).IsRequired();
                 builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
+
+				builder.HasOne(x => x.Profile)
+					.WithOne(x => x.Usser)
+					.HasPrincipalKey<User>(x => x.Id)
+					.OnDelete(DeleteBehavior.ClientCascade);
+			});
+
+			modelBuilder.Entity<Profile>(builder =>
+			{
+				builder.ToTable("Profiles").HasKey(x => x.Id);
+
+				builder.Property(x => x.Id).ValueGeneratedOnAdd();
+
+				builder.Property(x => x.Age);
+				builder.Property(x => x.Address).HasMaxLength(200);
+				builder.Property(x => x.UserId);
 			});
         }
     }
