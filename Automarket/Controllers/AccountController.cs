@@ -72,12 +72,6 @@ namespace Automarket.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
-
-        // GET: /<controller>/
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
 

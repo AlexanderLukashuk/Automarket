@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Car\" />
+    <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Car\" />
@@ -36,6 +37,7 @@
     <Folder Include="wwwroot\lib\select2\css\" />
     <Folder Include="wwwroot\lib\select2\js\" />
     <Folder Include="wwwroot\lib\select2\js\i18n\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />
