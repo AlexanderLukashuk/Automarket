@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/aleksandrlukasuk/Projects/Automarket/Automarket
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Car/GetCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyL0dldENhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

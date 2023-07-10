@@ -12,11 +12,14 @@ namespace Automarket
         public static void InitializeRepositories(this IServiceCollection services)
         {
             services.AddScoped<IBaseRepository<Car>, CarRepository>();
+            services.AddScoped<IBaseRepository<User>, UserRepository>();
         }
 
         public static void InitializeServices(this IServiceCollection services)
         {
             services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IUserService, UserService>();
         }
     }
 }

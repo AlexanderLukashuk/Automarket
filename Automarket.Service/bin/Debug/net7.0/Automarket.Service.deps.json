@@ -9,7 +9,8 @@
       "Automarket.Service/1.0.0": {
         "dependencies": {
           "Automarket.DAL": "1.0.0",
-          "Automarket.Domain": "1.0.0"
+          "Automarket.Domain": "1.0.0",
+          "Microsoft.Extensions.Logging": "7.0.0"
         },
         "runtime": {
           "Automarket.Service.dll": {}
