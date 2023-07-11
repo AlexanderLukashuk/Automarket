@@ -56,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/User/GetUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9HZXRVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/User/Save.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9TYXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
