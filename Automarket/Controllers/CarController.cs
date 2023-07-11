@@ -152,6 +152,8 @@ namespace Automarket.Controllers
 
             return View();
         }
+
+        public IActionResult Compare() => PartialView();
     }
 }
 
