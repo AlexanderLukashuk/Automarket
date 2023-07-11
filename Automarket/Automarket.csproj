@@ -30,6 +30,7 @@
     <None Remove="Views\Car\" />
     <None Remove="Views\Account\" />
     <None Remove="Views\User\" />
+    <None Remove="Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Car\" />
@@ -40,6 +41,7 @@
     <Folder Include="wwwroot\lib\select2\js\i18n\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\User\" />
+    <Folder Include="Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\" />
