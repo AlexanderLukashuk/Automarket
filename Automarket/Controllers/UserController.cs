@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Automarket.Domain.Extensions;
 using Automarket.Domain.ViewModels.User;
 using Automarket.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
