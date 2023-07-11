@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets/img/Mustang.jpg"
     },
     {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/js/modal.js",
+      "PackagePath": "staticwebassets/js/modal.js"
+    },
+    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
