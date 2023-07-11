@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.DAL/ApplicationDbContext.cs">
     <Files>
       <File FileName="Automarket/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Automarket/Program.cs" Line="23" Column="8" />
+      <File FileName="Automarket/Program.cs" />
       <File FileName="Automarket.Service/Interfaces/ICarService.cs" />
       <File FileName="Automarket.Service/Implementations/CarService.cs" />
       <File FileName="Automarket.DAL/Repositories/CarRepository.cs" />
       <File FileName="Automarket.Domain/ViewModels/Car/CarViewModel.cs" />
       <File FileName="Automarket.DAL/Interfaces/IBaseRepository.cs" />
-      <File FileName="Automarket/Initializer.cs" Line="22" Column="61" />
+      <File FileName="Automarket/Initializer.cs" />
       <File FileName="Automarket.DAL/Interfaces/ICarRepository.cs" />
-      <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="14" Column="40" />
+      <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="38" Column="32" />
       <File FileName="Automarket.Domain/Entity/Car.cs" />
       <File FileName="Automarket.Domain/Enum/StatusCode.cs" />
       <File FileName="Automarket.Domain/Enum/TypeCar.cs" />
       <File FileName="Automarket.Domain/Response/BaseResponse.cs" />
-      <File FileName="Automarket.Domain/Entity/User.cs" />
+      <File FileName="Automarket.Domain/Entity/User.cs" Line="16" Column="40" />
       <File FileName="Automarket.Domain/ViewModels/User/UserViewModel.cs" />
       <File FileName="Automarket.DAL/Repositories/UserRepository.cs" />
       <File FileName="Automarket.Domain/Enum/Role.cs" />
@@ -24,11 +28,11 @@
       <File FileName="Automarket.Domain/Extensions/EnumExtension.cs" />
       <File FileName="Automarket/Controllers/CarController.cs" />
       <File FileName="Automarket/nlog.config" />
-      <File FileName="Automarket/Views/Shared/_Layout.cshtml" />
+      <File FileName="Automarket/Views/Shared/_Layout.cshtml" Line="129" Column="25" />
       <File FileName="Automarket/wwwroot/lib/select2/css/select2.css" />
       <File FileName="Automarket/Views/Car/GetCars.cshtml" />
       <File FileName="Automarket/Views/Car/GetCar.cshtml" />
-      <File FileName="Automarket/Views/_ViewImports.cshtml" Line="6" Column="1" />
+      <File FileName="Automarket/Views/_ViewImports.cshtml" />
       <File FileName="Automarket/Migrations/ApplicationDbContextModelSnapshot.cs" />
       <File FileName="Automarket/Migrations/20230708212457_UserModel.cs" />
       <File FileName="Automarket/Migrations/20230706064335_Initial.cs" />
@@ -37,31 +41,35 @@
       <File FileName="Automarket.Domain/ViewModels/Account/LoginViewModel.cs" />
       <File FileName="Automarket.Domain/ViewModels/Account/RegisterViewModel.cs" />
       <File FileName="Automarket.Service/Interfaces/IAccountService.cs" />
-      <File FileName="Automarket.Service/Implementations/AccountService.cs" Line="99" Column="19" />
-      <File FileName="Automarket/Controllers/AccountController.cs" Line="16" Column="35" />
-      <File FileName="Automarket/Views/Account/Login.cshtml" Line="28" Column="112" />
-      <File FileName="Automarket/Views/Account/Register.cshtml" Line="36" Column="111" />
-      <File FileName="Automarket/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Automarket.Service/Implementations/AccountService.cs" />
+      <File FileName="Automarket/Controllers/AccountController.cs" />
+      <File FileName="Automarket/Views/Account/Login.cshtml" />
+      <File FileName="Automarket/Views/Account/Register.cshtml" />
+      <File FileName="Automarket/Controllers/HomeController.cs" />
+      <File FileName="Automarket.Domain/Entity/Profile.cs" Line="8" Column="15" />
+      <File FileName="Automarket.Domain/ViewModels/Profile/ProfileViewModel.cs" Line="19" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Automarket" expanded="True">
-            <Node name="DAL" expanded="True">
-              <Node name="Automarket.DAL" expanded="True">
+          <Node name="Automarket">
+            <Node name="DAL">
+              <Node name="Automarket.DAL">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Repositories" expanded="True" />
+                <Node name="ApplicationDbContext.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="Domain" expanded="True">
-              <Node name="Automarket.Domain" expanded="True">
-                <Node name="Entity" expanded="True" />
+            <Node name="Domain">
+              <Node name="Automarket.Domain">
+                <Node name="Enum" expanded="True" />
                 <Node name="Extensions" expanded="True" />
                 <Node name="Helpers" expanded="True" />
                 <Node name="Response" expanded="True" />
                 <Node name="ViewModels" expanded="True">
                   <Node name="Account" expanded="True" />
                   <Node name="Car" expanded="True" />
+                  <Node name="Profile" expanded="True" />
                   <Node name="User" expanded="True" />
                 </Node>
               </Node>
@@ -72,10 +80,10 @@
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Automarket" expanded="True">
+            <Node name="Automarket">
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
-              <Node name="Views" expanded="True">
+              <Node name="Views">
                 <Node name="Account" expanded="True" />
                 <Node name="Car" expanded="True" />
                 <Node name="Home" expanded="True" />
@@ -93,10 +101,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
