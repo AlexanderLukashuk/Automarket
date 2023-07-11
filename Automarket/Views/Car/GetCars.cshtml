@@ -1,7 +1,8 @@
-﻿@model List<Car>
+﻿@using Automarket.Domain.ViewModels.Car
+@model List<Automarket.Domain.Entity.Car>
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Список автомобилей";
     Layout = "_Layout";
 }
 
@@ -30,10 +31,10 @@
 
 <div class="card col-md-12" style="margin: 10px;">
     <div class="card-buttons-group">
-        <button class='btn btn-primary' id='compareBtnId'>Comparison</button>
+        <button class='btn btn-primary' id='compareBtnId'>Сравнение</button>
         @if (User.IsInRole("Admin"))
         {
-            <button class='btn btn-success' id='addCarId'>Add</button>
+            <button class='btn btn-success' id='addCarId'>Добавить</button>
         }
     </div>
 </div>
@@ -49,9 +50,9 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title text-center">The list of cars is empty :(</h5>
+                    <h5 class="card-title text-center">Список машин пуст :(</h5>
                     <p class="card-text">
-                        The list will be updated later, do not worry
+                        Список пополниться позже, не расстраивайтесь
                     </p>
                 </div>
             </div>
@@ -84,30 +85,26 @@ else
     <div class="row">
         @foreach (var car in Model)
         {
-            <div class="row row-cols-1 col-md-4 text-center">
+            <div class="row row-cols-1 @cardStyle text-center">
                 <div class="col" style="padding: 10px;">
                     <div class="card">
-                        <img src="https://images.wallpaperscraft.ru/image/single/mercedes_benz_s_class_w222_112850_800x600.jpg" class="card-img-top" alt="@car.Name">
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(car?.Avatar ?? Array.Empty<byte>())" alt="@car.Name" />
                         <div class="card-body">
-                            <h5 class="card-title">@car.Name</h5>
-                            <p class="card-text">@car.Desctiption</p>
+                            <h5 class="card-title">Название: @car.Name</h5>
+                            <p class="card-text">Краткое описание: @car.Desctiption ...</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Price: @car.Price $</li>
-                            <li class="list-group-item">@car.TypeCar</li>
+                            <li class="list-group-item">Стоимость: @car.Price ₽</li>
+                            <li class="list-group-item">Модель: @car.Model</li>
                         </ul>
                         <div class="card-body">
                             <button class="btn btn-primary" onclick="openModal({ url: '/Car/GetCar', data: '@car.Id' })"
                                     data-toggle="ajax-modal" data-target="Modal">
-                                Open
+                                Открыть
                             </button>
-                            @*<a asp-controller="Car" asp-action="GetCar" asp-route-id="@car.Id" class="card-link">Go</a>*@
-                            @* <a asp-controller="Basket" asp-action="Add" asp-route-id="@id" class="card-link">Добавить</a> *@
                             @if (User.IsInRole("Admin"))
                             {
-                                <hr />
-                                <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">Delete</a>
-                                <a asp-controller="Car" asp-action="Save" asp-route-id="@car.Id" class="btn btn-primary">Edit</a>
+                                <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">Удалить</a>
                             }
                             <a asp-controller="Order" asp-action="CreateOrder" asp-route-id="@car.Id" class="btn btn-success">В корзину</a>
                         </div>
@@ -117,45 +114,6 @@ else
         }
     </div>
 }
-
-<div class="modal fade" id="modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Information about the car</h5>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-close btn-secondary" data-bs-dismiss="modal">Close</button>
-                @if (User.IsInRole("Admin"))
-                    {
-                        <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
-                    }
-            </div>
-        </div>
-    </div>
-</div>
-
-@*@section pageScripts {
-        <script>const hideCardElement = $('#hideCardsId');
-            const showCardElement = $('#showCardsId');
-            const cardElement = $('.card');
-
-            const interval = 2000;
-
-            hideCardElement.click(function () {
-                hideCardElement.hide(interval);
-                showCardElement.show(interval);
-                cardElement.hide(interval);
-            });
-
-            showCardElement.click(function () {
-                hideCardElement.show(interval);
-                showCardElement.hide(interval);
-                cardElement.show(interval);
-            });</script>
-    }*@
 
 @section pageScripts {
 
