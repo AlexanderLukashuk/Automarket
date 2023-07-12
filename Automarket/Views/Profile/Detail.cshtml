@@ -1,7 +1,7 @@
 ﻿@model Automarket.Domain.ViewModels.Profile.ProfileViewModel
 
 @{
-    ViewBag.Title = "Профиль";
+    ViewBag.Title = "Profile";
     Layout = "_Layout";
 }
 <br />
@@ -11,19 +11,19 @@
             <div class="card-body">
                 <form id="profileFormId">
                     <input asp-for="Id" hidden="hidden" />
-                    <h5 class="card-title">Данные профиля</h5>
+                    <h5 class="card-title">Profile Data</h5>
                     <div class="mb-3">
                         <label class="form-label text-black-50">Возраст</label>
                         <input type="text" class="form-control" asp-for="Age">
-                        <div class="form-text">Возраст должен быть указан от 0 до 150 лет.</div>
+                        <div class="form-text">The age must be specified from 0 to 150 years.</div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label text-black-50">Адрес</label>
                         <textarea class="form-control" asp-for="Address" rows="3"></textarea>
-                        <div class="form-text">Длина адреса должна быть от 5 до 200 символов.</div>
+                        <div class="form-text">The length of the address must be from 5 to 200 characters.</div>
                     </div>
                     <div class="card-buttons-group">
-                        <button class='btn btn-primary' id='saveProfileId'>Сохранить</button>
+                        <button class='btn btn-primary' id='saveProfileId'>Save</button>
                     </div>
                 </form>
             </div>
@@ -33,18 +33,18 @@
         <div class="card">
             <div class="card-body">
                 <form id="accountFormId">
-                    <h5 class="card-title">Данные аккаунта</h5>
+                    <h5 class="card-title">Account details</h5>
                     <div class="mb-3">
                         <label class="form-label text-black-50">Логин</label>
                         <input type="text" class="form-control" asp-for="UserName" disabled="disabled">
-                        <div class="form-text">Длина логина должна быть от 3 до 20 символов.</div>
+                        <div class="form-text">The length of the login must be from 3 to 20 characters.</div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label text-black-50">Новый пароль</label>
                         <input name="NewPassword" class="form-control textbox-dg font-weight-bold text-center" type="password">
                     </div>
                     <div class="card-buttons-group">
-                        <button class='btn btn-primary' id='saveAccountId'>Сохранить</button>
+                        <button class='btn btn-primary' id='saveAccountId'>Save</button>
                     </div>
                 </form>
             </div>
@@ -58,10 +58,10 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="@Url.Action("Index", "Home")">Главная</a>
+                        <a class="nav-link active" href="@Url.Action("Index", "Home")">Home Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("GetCars", "Car")">Автомобили</a>
+                        <a class="nav-link" href="@Url.Action("GetCars", "Car")">Auto</a>
                     </li>
                 </ul>
             </div>
@@ -86,18 +86,18 @@
                 data: data,
                 success: function (response) {
                     Swal.fire({
-                        title: 'Информация',
+                        title: 'Information',
                         text: response.description,
                         icon: 'success',
-                        confirmButtonText: 'Окей'
+                        confirmButtonText: 'Okay'
                     })
                 },
                 error: function (data) {
                     Swal.fire({
-                        title: 'Информация',
-                        text: 'Ошибка валидации',
+                        title: 'Information',
+                        text: 'Validation error',
                         icon: 'error',
-                        confirmButtonText: 'Окей'
+                        confirmButtonText: 'Okay'
                     })
                 }
             });
@@ -116,18 +116,18 @@
                 data: data,
                 success: function (response) {
                     Swal.fire({
-                        title: 'Информация',
+                        title: 'Information',
                         text: response.description,
                         icon: 'success',
-                        confirmButtonText: 'Окей'
+                        confirmButtonText: 'Okay'
                     })
                 },
                 error: function (response) {
                     Swal.fire({
-                        title: 'Информация',
+                        title: 'Information',
                         text: response.responseJSON.errorMessage,
                         icon: 'error',
-                        confirmButtonText: 'Окей'
+                        confirmButtonText: 'Okay'
                     })
                 }
             });
