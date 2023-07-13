@@ -31,10 +31,10 @@
 
 <div class="card col-md-12" style="margin: 10px;">
     <div class="card-buttons-group">
-        <button class='btn btn-primary' id='compareBtnId'>Сравнение</button>
+        <button class='btn btn-primary' id='compareBtnId'>Comparison</button>
         @if (User.IsInRole("Admin"))
         {
-            <button class='btn btn-success' id='addCarId'>Добавить</button>
+            <button class='btn btn-success' id='addCarId'>Add</button>
         }
     </div>
 </div>
@@ -50,9 +50,9 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Список машин пуст :(</h5>
+                    <h5 class="card-title text-center">The list of cars is empty :(</h5>
                     <p class="card-text">
-                        Список пополниться позже, не расстраивайтесь
+                        The list will be updated later, do not worry
                     </p>
                 </div>
             </div>
@@ -90,12 +90,13 @@ else
                     <div class="card">
                         <img src="data:image/jpeg;base64,@Convert.ToBase64String(car?.Avatar ?? Array.Empty<byte>())" alt="@car.Name" />
                         <div class="card-body">
-                            <h5 class="card-title">Название: @car.Name</h5>
-                            <p class="card-text">Краткое описание: @car.Desctiption ...</p>
+                            <h5 class="card-title">Name: @car.Name</h5>
+                            <p class="card-text">Short description: @car.Desctiption ...</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Стоимость: @car.Price ₽</li>
-                            <li class="list-group-item">Модель: @car.Model</li>
+                            <li class="list-group-item">Speed: @car.Speed km/h</li>
+                            <li class="list-group-item">Price: @car.Price $</li>
+                            <li class="list-group-item">Model: @car.Model</li>
                         </ul>
                         <div class="card-body">
                             <button class="btn btn-primary" onclick="openModal({ url: '/Car/GetCar', data: '@car.Id' })"
@@ -104,9 +105,9 @@ else
                             </button>
                             @if (User.IsInRole("Admin"))
                             {
-                                <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">Удалить</a>
+                                <a asp-controller="Car" asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger">Delete</a>
                             }
-                            <a asp-controller="Order" asp-action="CreateOrder" asp-route-id="@car.Id" class="btn btn-success">В корзину</a>
+                            <a asp-controller="Order" asp-action="CreateOrder" asp-route-id="@car.Id" class="btn btn-success">Into a basket</a>
                         </div>
                     </div>
                 </div>
