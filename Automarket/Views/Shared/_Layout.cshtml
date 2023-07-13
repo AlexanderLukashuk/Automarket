@@ -76,11 +76,11 @@
                     }
                     @if (User.IsInRole("Admin"))
                     {
-                        <li class="nav-item dropdown">
+                        @*<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle paragraphLayout active text-black" href="#" data-toggle="dropdown" style="font-family:'Comic Sans MS'; font-weight: bold;">
                                 Admin
                             </a>
-                            @*<div class="dropdown-menu">
+                            <div class="dropdown-menu">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -99,15 +99,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>*@
-                        </li>
+                                </div>
+                        </li>*@
                         <li class="nav-item text-center">
-                            <a class="nav-link active text-white" asp-controller="Car" asp-action="Save">
+                            <a class="nav-link active" asp-controller="Car" asp-action="Save">
                                 Add
                             </a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link active text-white" asp-controller="Admin" asp-action="GetUsers">
+                            <a class="nav-link active" asp-controller="User" asp-action="GetUsers">
                                 Users
                             </a>
                         </li>
