@@ -43,7 +43,7 @@ namespace Automarket.DAL
 				builder.HasOne(x => x.Profile)
 					.WithOne(x => x.Usser)
 					.HasPrincipalKey<User>(x => x.Id)
-					.OnDelete(DeleteBehavior.ClientCascade);
+					.OnDelete(DeleteBehavior.Cascade);
 			});
 
 			modelBuilder.Entity<Profile>(builder =>

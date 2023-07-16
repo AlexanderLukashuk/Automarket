@@ -84,7 +84,7 @@ namespace Automarket.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> GetCar(string name)
+        public async Task<IActionResult> GetCar(string name, int page = 1, int pageSize = 5)
         {
             var response = await _carService.GetCar(name);
             return Json(response.Data);
