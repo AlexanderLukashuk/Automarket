@@ -1,9 +1,27 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket/Controllers/CarController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.DAL/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Automarket.Service/Implementations/CarService.cs" Line="1" Column="1" />
-      <File FileName="Automarket.Service/Interfaces/ICarService.cs" Line="1" Column="1" />
+      <File FileName="Automarket.Service/Implementations/CarService.cs" />
+      <File FileName="Automarket.Service/Interfaces/ICarService.cs" />
       <File FileName="Automarket/Controllers/CarController.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Views/Car/Compare.cshtml" Line="1" Column="1" />
+      <File FileName="Automarket.Domain/Entity/Profile.cs" Line="1" Column="1" />
+      <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="46" Column="40" />
+      <File FileName="Automarket.DAL/Repositories/ProfileRepository.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Migrations/20230708212457_UserModel.cs" Line="14" Column="30" />
+      <File FileName="Automarket/Migrations/20230706064335_Initial.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Migrations/20230716132705_addProfile.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Automarket/Initializer.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Controllers/ProfileController.cs" Line="1" Column="1" />
+      <File FileName="Automarket.Service/Interfaces/IProfileService.cs" Line="1" Column="1" />
+      <File FileName="Automarket.Domain/ViewModels/Profile/ProfileViewModel.cs" Line="1" Column="1" />
+      <File FileName="Automarket.Service/Implementations/ProfileService.cs" Line="1" Column="1" />
+      <File FileName="Automarket/Views/Profile/Detail.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,6 +31,7 @@
               <Node name="Automarket.DAL" expanded="True">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Repositories" expanded="True" />
+                <Node name="ApplicationDbContext.cs" selected="True" />
               </Node>
             </Node>
             <Node name="Domain" expanded="True">
@@ -36,10 +55,9 @@
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Automarket">
-              <Node name="Controllers">
-                <Node name="CarController.cs" selected="True" />
-              </Node>
+            <Node name="Automarket" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
                 <Node name="Car" expanded="True" />
@@ -67,11 +85,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

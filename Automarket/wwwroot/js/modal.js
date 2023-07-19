@@ -4,7 +4,7 @@
     const modal = $('#modal');
     
     if (id === undefined || url === undefined) {
-        alert('Whoops.... something went wrong')
+        alert('Упссс.... что-то пошло не так')
         return;
     }
     

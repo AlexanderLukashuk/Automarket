@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Claims;
 using Automarket.DAL.Interfaces;
+using Automarket.DAL.Repositories;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Enum;
 using Automarket.Domain.Helpers;
@@ -14,10 +15,12 @@ namespace Automarket.Service.Implementations
 	public class AccountService : IAccountService
 	{
 		private readonly IBaseRepository<User> _userRepository;
+        private readonly IBaseRepository<Profile> _proFileRepository;
 
-		public AccountService(IBaseRepository<User> userRepository)
+        public AccountService(IBaseRepository<User> userRepository, IBaseRepository<Profile> proFileRepository)
 		{
 			_userRepository = userRepository;
+            _proFileRepository = proFileRepository;
 		}
 
         public async Task<BaseResponse<ClaimsIdentity>> Login(LoginViewModel model)
@@ -81,6 +84,12 @@ namespace Automarket.Service.Implementations
 
                 await _userRepository.Create(user);
 
+                var profile = new Profile()
+                {
+                    UserId = user.Id,
+                };
+
+                await _proFileRepository.Create(profile);
                 var result = Authenticate(user);
 
                 return new BaseResponse<ClaimsIdentity>()

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Automarket.bundle.scp.css"
     },
     {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/css/backImage.css",
       "PackagePath": "staticwebassets/css/backImage.css"
     },
@@ -53,6 +57,10 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/.DS_Store",
+      "PackagePath": "staticwebassets/lib/.DS_Store"
+    },
+    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
@@ -73,22 +81,6 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
-    },
-    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
@@ -103,54 +95,6 @@
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
@@ -169,22 +113,6 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
-    },
-    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
@@ -199,22 +127,6 @@
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
-    },
-    {
-      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
@@ -281,12 +193,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/select2/.DS_Store",
+      "PackagePath": "staticwebassets/lib/select2/.DS_Store"
+    },
+    {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/select2/css/select2.css",
       "PackagePath": "staticwebassets/lib/select2/css/select2.css"
     },
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/select2/css/select2.min.css",
       "PackagePath": "staticwebassets/lib/select2/css/select2.min.css"
+    },
+    {
+      "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/select2/js/.DS_Store",
+      "PackagePath": "staticwebassets/lib/select2/js/.DS_Store"
     },
     {
       "Id": "/Users/aleksandrlukasuk/Projects/Automarket/Automarket/wwwroot/lib/select2/js/i18n/af.js",
