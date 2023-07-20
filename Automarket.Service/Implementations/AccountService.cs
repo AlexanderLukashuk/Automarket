@@ -23,6 +23,40 @@ namespace Automarket.Service.Implementations
             _proFileRepository = proFileRepository;
 		}
 
+        public async Task<BaseResponse<bool>> ChangePassword(ChangePasswordViewModel model)
+        {
+            try
+            {
+                var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Name == model.UserName);
+                if (user == null)
+                {
+                    return new BaseResponse<bool>()
+                    {
+                        StatusCode = StatusCode.UserNotFound,
+                        Description = "User not found"
+                    };
+                }
+
+                user.Password = HashPasswordHelper.HashPassword(model.NewPassword);
+                await _userRepository.Update(user);
+
+                return new BaseResponse<bool>()
+                {
+                    Data = true,
+                    StatusCode = StatusCode.OK,
+                    Description = "Password updated"
+                };
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<bool>()
+                {
+                    Description = ex.Message,
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
         public async Task<BaseResponse<ClaimsIdentity>> Login(LoginViewModel model)
         {
             try
