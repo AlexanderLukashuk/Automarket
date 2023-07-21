@@ -1,6 +1,7 @@
 ﻿using System;
 using Automarket.Domain.Entity;
 using Automarket.Domain.Response;
+using Automarket.Domain.ViewModels.Order;
 
 namespace Automarket.Service.Interfaces
 {
