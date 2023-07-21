@@ -28,6 +28,7 @@ namespace Automarket.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
         public async Task<IActionResult> GetItem(long id)
         {
             var response = await _basketService.GetItem(User.Identity.Name, id);

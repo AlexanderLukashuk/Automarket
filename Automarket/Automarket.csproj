@@ -31,6 +31,7 @@
     <None Remove="Views\Account\" />
     <None Remove="Views\User\" />
     <None Remove="Views\Profile\" />
+    <None Remove="Views\Basket\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Car\" />
@@ -41,6 +42,7 @@
     <Folder Include="Views\Account\" />
     <Folder Include="Views\User\" />
     <Folder Include="Views\Profile\" />
+    <Folder Include="Views\Basket\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\select2\" />
