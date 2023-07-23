@@ -1,48 +1,67 @@
 ﻿<Properties StartupConfiguration="{5212DFF0-E016-4DEC-A9FE-9415CF03B086}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Automarket PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.DAL/ApplicationDbContext.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Automarket.Service/Implementations/OrderService.cs">
     <Files>
-      <File FileName="Automarket.Domain/Entity/User.cs" Line="18" Column="38" />
-      <File FileName="Automarket.Domain/Entity/Basket.cs" Line="11" Column="1" />
-      <File FileName="Automarket.Domain/Entity/Order.cs" Line="22" Column="46" />
+      <File FileName="Automarket.Domain/Entity/User.cs" />
+      <File FileName="Automarket.Domain/Entity/Basket.cs" />
+      <File FileName="Automarket.Domain/Entity/Order.cs" />
       <File FileName="Automarket.DAL/ApplicationDbContext.cs" Line="93" Column="7" />
+      <File FileName="Automarket.DAL/Repositories/BasketRepository.cs" Line="38" Column="27" />
+      <File FileName="Automarket.DAL/Repositories/OrderRepository.cs" Line="38" Column="27" />
+      <File FileName="Automarket.Service/Interfaces/IBasketService.cs" Line="9" Column="41" />
+      <File FileName="Automarket.Domain/ViewModels/Order/OrderViewModel.cs" Line="8" Column="39" />
+      <File FileName="Automarket.Service/Implementations/BasketService.cs" Line="49" Column="23" />
+      <File FileName="Automarket.Domain/Enum/StatusCode.cs" Line="11" Column="28" />
+      <File FileName="Automarket/Controllers/BasketController.cs" Line="31" Column="18" />
+      <File FileName="Automarket/Views/Basket/Detail.cshtml" Line="48" Column="54" />
+      <File FileName="Automarket/Views/Basket/GetItem.cshtml" Line="20" Column="57" />
+      <File FileName="Automarket.Service/Interfaces/IOrderService.cs" Line="10" Column="46" />
+      <File FileName="Automarket.Domain/ViewModels/Order/CreateOrderViewModel.cs" Line="6" Column="35" />
+      <File FileName="Automarket.Service/Implementations/OrderService.cs" Line="99" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Automarket">
-            <Node name="DAL">
+            <Node name="DAL" expanded="True">
               <Node name="Automarket.DAL">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Repositories" expanded="True" />
-                <Node name="ApplicationDbContext.cs" selected="True" />
               </Node>
             </Node>
             <Node name="Domain">
               <Node name="Automarket.Domain">
-                <Node name="Enum" expanded="True" />
+                <Node name="Entity" expanded="True" />
                 <Node name="Extensions" expanded="True" />
                 <Node name="Helpers" expanded="True" />
                 <Node name="Response" expanded="True" />
                 <Node name="ViewModels" expanded="True">
                   <Node name="Account" expanded="True" />
                   <Node name="Car" expanded="True" />
+                  <Node name="Order" expanded="True" />
                   <Node name="Profile" expanded="True" />
                   <Node name="User" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="Service" expanded="True">
-              <Node name="Automarket.Service" expanded="True">
-                <Node name="Implementations" expanded="True" />
-                <Node name="Interfaces" expanded="True" />
+            <Node name="Service">
+              <Node name="Automarket.Service">
+                <Node name="Implementations" expanded="True">
+                  <Node name="OrderService.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
-            <Node name="Automarket" expanded="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="Automarket">
               <Node name="Migrations" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
+                <Node name="Basket" expanded="True" />
                 <Node name="Car" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Profile" expanded="True" />
@@ -73,10 +92,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

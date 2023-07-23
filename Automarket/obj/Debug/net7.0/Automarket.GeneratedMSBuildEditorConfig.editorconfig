@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Basket/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFza2V0L0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Basket/GetItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFza2V0L0dldEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aleksandrlukasuk/Projects/Automarket/Automarket/Views/Car/Compare.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyL0NvbXBhcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
